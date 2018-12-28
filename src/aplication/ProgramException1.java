@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import model.entities.Reservation;
+import model.entities.Reservation1;
 
 public class ProgramException1 { //MUITO RUIM
 
@@ -23,7 +23,7 @@ public class ProgramException1 { //MUITO RUIM
 		if(!dtCheckOut.after(dtCheckIn)) { // se dtCheckOut nao for maior que dtCheckIn
 			System.out.println("Error in reservation: Check-out date must be after check-in date");
 		}else {
-			Reservation reservation = new Reservation(number, dtCheckIn, dtCheckOut);
+			Reservation1 reservation = new Reservation1(number, dtCheckIn, dtCheckOut);
 			System.out.println("Reservation: " + reservation);
 			
 			System.out.println();
